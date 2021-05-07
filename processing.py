@@ -43,8 +43,8 @@ def get_training(train_loc: str):
 
 def preprocess_training(split=0, rs=None):
     (X, y) = get_training(TRAIN_LOCATION)
-    X["n_ingredients"] = np.log(X["n_ingredients"])
-    X["n_steps"] = np.log(X["n_steps"])
+    X["n_ingredients"] = np.log(X["n_ingredients"] + 1)
+    X["n_steps"] = np.log(X["n_steps"] + 1)
     X = X.loc[:, ["n_ingredients", "n_steps"]]
 
     if split > 0:
@@ -63,8 +63,8 @@ def preprocess_training(split=0, rs=None):
 
 def preprocess_testing():
     X = get_data(TEST_LOCATION)
-    X["n_ingredients"] = np.log(X["n_ingredients"])
-    X["n_steps"] = np.log(X["n_steps"])
+    X["n_ingredients"] = np.log(X["n_ingredients"] + 1)
+    X["n_steps"] = np.log(X["n_steps"] + 1)
     X = X.loc[:, ["n_ingredients", "n_steps"]]
     return X
 
