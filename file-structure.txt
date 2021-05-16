@@ -1,21 +1,9 @@
 COMP30027-P2
- \- Analytics
-     \- create_figures.ipynb
-     \- figures
-     \- report.docx (or report.md)
- \- utils.py # All the functions for utilities
- \- read_data.py # All the functions used for data reading
- \- preprocess.py # All the functions used for preprocessing and feature extraction
- \- models
-     \- SVC-linear-kernel.ipynb
-     \- SCV-RBF-kernel.ipynb
-     \- zero-R.ipynb
-     \- LightGBM-GBDT.ipynb
-     \- XGBoost-GBDT.ipynb
-     \- MPL.ipynb
-     \- ...
-     \- pickle_models
-         \- LightGBM-GBDT-50.sav # pickle data of model
-         \- ...
- \- evaluation.ipynb
- \- submission.ipynb
+
+Models are created in each ipynb files and then the submissions are created in the submission.ipynb
+
+## Models
+- 1-R
+- SVM
+- Decision Tree
+- Neural Network
