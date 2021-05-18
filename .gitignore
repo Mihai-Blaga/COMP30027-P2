@@ -1,3 +1,5 @@
 COMP30027_2021_Project2_datasets/
 .idea
 __pycache__
+.vscode/
+.ipynb_checkpoints/
