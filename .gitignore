@@ -3,3 +3,4 @@ COMP30027_2021_Project2_datasets/
 __pycache__
 .vscode/
 .ipynb_checkpoints/
+.DS_Store
